@@ -16,7 +16,8 @@ app.post('/login', (req, res) => {
     const { username, password } = req.body;
     // Simule a validação do usuário (substitua pela sua própria lógica)
     if (username === 'adm' && password === '123456') {
-        res.send('Login foi bem sucedido!!!!');
+        res.redirect('/welcome.html');
+        //O redirect é para onde manda a nova página após o login...
     } else {
         res.send('Nome de usuário ou senha inválidos.');
     }

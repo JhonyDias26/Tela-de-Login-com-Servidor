@@ -26,3 +26,6 @@ app.post('/login', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+//instale as dependências necessárias:
+//Lembrar sempre de importar os pacotes do npm install
